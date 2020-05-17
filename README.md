@@ -1,0 +1,2 @@
+# LottoNumberPicker
+Console test App
