@@ -1,13 +1,14 @@
 #include <iostream>
-#include <string>
+#include <sstream>
 
 #include "mainheader.h"
 
 using namespace std;
 
 //classes declared
-LottoPicker lottopicker;
 MainMenuSystem mmm;
+EUPicker eupicker;
+NLPicker nlpicker;
 
 //Prototypes
 
@@ -17,7 +18,7 @@ int main(){
     
     //Main Menu Function
     mmm.MainMenu();
-
+   
 }
 
 
@@ -29,23 +30,31 @@ void MainMenuSystem::MainMenu(){
         cout << "***This is the Lotto Pick Console App***\n" << endl;
         cout << "Please choose from the following options\n" << endl;
         cout << "1. National Lotto Picker\n";
-        cout << "2. Euro Lotto Picker\n" <<endl;
+        cout << "2. Euro Lotto Picker\n";
+        cout << "3. Exit Lotto Picker\n" << endl;
 
-        int choice;
-
+        int choice = 0;
     do {
+            
             cout << "Enter your choice here:  ";
             cin >> choice; 
             if(choice == 1){
-                    lottopicker.NationalLottoPicker();  
+                    nlpicker.NationalLottoPicker();  
                 break;
             }
             else if(choice == 2){
-                    lottopicker.EuroLottoPicker();
+                    eupicker.EuroLottoPicker();
                 break;
-            }else if( choice != 1 || 2){
+            }else if(choice == 3){
+                exit(0);
+            }else if(!cin){
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                cout << "Please enter a valid choice!\n" << endl;
+                
+            }else{
                 cout << "Please enter a valid choice!\n" << endl;
             }
-        }while(choice != 1 || 2);       
+        }while(choice != 1 || 2 || 3);       
         
 }

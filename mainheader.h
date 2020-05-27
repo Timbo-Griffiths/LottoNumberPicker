@@ -2,10 +2,12 @@
 #define MAINHEADER_H_
 
 
-class LottoPicker{
+class NLPicker{
     public:
         void NationalLottoPicker();
-        void EuroLottoPicker();
+        void NLRoll();
+        void NLReRoll();
+        
 };
 
 class MainMenuSystem{
@@ -13,6 +15,13 @@ class MainMenuSystem{
         void MainMenu();
 };
 
+class EUPicker{
+    public:
+        void EuroLottoPicker();
+        void EURoll();
+        void EUReRoll();
+        void StarRoll();
+};
 
 
 #endif /* main header file */
