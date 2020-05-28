@@ -8,7 +8,7 @@ Simple to use.
 Download LottoPickerApp file
 
 MacOS version: LottoPickerApp
-Windows version: LottoPickerApp.exe
+Windows version: Coming soon...
 
 These files must be run in a terminal on MacOS and Command Prompt on Windows.
 
