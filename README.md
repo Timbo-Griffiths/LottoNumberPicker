@@ -13,5 +13,3 @@ Windows version: Coming soon...
 These files must be run in a terminal on MacOS and Command Prompt on Windows.
 
 On program launch follow the simple inputs 1, 2 or 3 to advance through the app.
-
-Enjoy.
